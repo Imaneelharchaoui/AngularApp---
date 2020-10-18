@@ -6,12 +6,14 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { LoginComponent } from './login/login.component';
 import {FormsModule} from '@angular/forms';
 import {RouterModule} from '@angular/router';
+import { SalesPersonListComponent } from './sales-person-list/sales-person-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
-    LoginComponent
+    LoginComponent,
+    SalesPersonListComponent
   ],
   imports: [
     BrowserModule,
