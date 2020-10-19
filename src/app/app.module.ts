@@ -20,7 +20,7 @@ import { SalesPersonListComponent } from './sales-person-list/sales-person-list.
     FormsModule,
     RouterModule.forRoot([
       {path: '', component: LoginComponent},
-      {path: 'he', component: WelcomeComponent},  {path: 'crit', component: LoginComponent},
+      {path: 'he', component: SalesPersonListComponent},  {path: 'crit', component: LoginComponent},
     ]),
   ],
   providers: [],
