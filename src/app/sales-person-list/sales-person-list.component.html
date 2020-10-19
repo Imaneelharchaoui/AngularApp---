@@ -1,12 +1,13 @@
 <p>sales-person-list works!</p>
-<table border="1">
+<table class="table table-hover">
 
-    <thead>
+    <thead class="thead-light">
          <tr>
               <th>  firstname  </th>
                <th>  lastname </th>
                 <th>  email  </th>
                 <th>  Salesvolume  </th>
+                  <th>  quota  </th>
 
 
          </tr>
@@ -18,7 +19,13 @@
                <td>{{tempsales.firstname}}   </td>
                <td>{{tempsales.lastname}}   </td>
                <td>{{tempsales.email}}   </td>
-               <td>{{tempsales.salesVolume}}   </td>
+               <td>{{tempsales.salesVolume|currency:'USD' }}</td>
+               <td>
+
+               <div *ngIf="tempsales.salesVolume>=3000;else myElseBlock"   > yes</div>-->
+
+                <ng-template #myElseBlock>no</ng-template>-->
+               </td>
 
 
              </tr>
